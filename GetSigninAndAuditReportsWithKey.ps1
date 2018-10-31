@@ -89,8 +89,7 @@ $data | Sort-Object -Property createdDateTime  | Export-Csv $outputSigninLogFile
 Write-Output "Sign-in log data is exported to $outputSigninLogFile"
 
 #
-# Audit log
-# Compose the access token type and access token for authorization header
+# Get audit log
 #
 $data = @()
 $url = "$resource/beta/auditLogs/directoryAudits"
